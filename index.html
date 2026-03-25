@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technocratie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <p class="top-text">Collection officielle</p>
+      <h1>TECHNOCRATIE</h1>
+      <p class="hero-signature">by <span>Jf &amp; Sono</span></p>
+      <p class="subtitle">Streetwear futuriste · identité brute · pièces visuelles</p>
+      <a href="#collection" class="hero-button">Voir la collection</a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-hint-line"></div>
+    </div>
+  </header>
+
+  
+  <button class="cart-fab" id="cartFab" type="button" aria-label="Ouvrir le panier">
+    <span class="cart-fab-icon">🛒</span>
+    <span class="cart-fab-text">Panier</span>
+    <span class="cart-fab-count" id="cartCount">0</span>
+  </button>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <div>
+        <p>Panier</p>
+        <h2>Ta sélection</h2>
+      </div>
+      <button class="cart-drawer-close" id="cartClose" type="button">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Ton panier est vide.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">0,00€</strong>
+      </div>
+      <button class="cart-checkout-button" id="cartCheckoutButton" type="button">Continuer</button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <section id="confirmationSection" class="confirmation-section hidden">
+    <div class="confirmation-box">
+      <p class="confirmation-top">Paiement confirmé</p>
+      <h2>Merci pour ta commande</h2>
+      <p class="confirmation-text">
+        Ta commande a bien été prise en compte. Tu recevras les informations de suivi dès que tout sera prêt.
+      </p>
+      <div class="confirmation-summary">
+        <span id="confirmationProduct">Produit : —</span>
+      </div>
+      <a href="#collection" class="confirmation-button">Revenir à la collection</a>
+    </div>
+  </section>
+
+  <section id="collection" class="collection">
+    <div class="section-title">
+      <p>Drop actuel</p>
+      <h2>La collection</h2>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card"
+           data-product-name="Technocratie"
+           data-product-price="44,99€"
+           data-stripe-url="https://buy.stripe.com/test_8x2eVd8y8gcF56r1f3eEo0a">
+        <div class="product-image-slider">
+          <button class="slider-arrow slider-arrow-left" type="button" aria-label="Image précédente">‹</button>
+          <div class="product-image-track">
+            <img src="images/technocratie-front.jpg" alt="Maillot Technocratie face" class="main-product-image active" />
+            <img src="images/technocratie-back.jpg" alt="Maillot Technocratie dos" class="main-product-image" />
+          </div>
+          <button class="slider-arrow slider-arrow-right" type="button" aria-label="Image suivante">›</button>
+          <div class="product-badges"><span>Face</span></div>
+          <button class="zoom-button" type="button">Voir +</button>
+        </div>
+        <div class="product-info">
+          <h3>Technocratie</h3>
+          <p class="price">44,99€</p>
+          <button class="product-button" type="button">Ajouter au panier</button>
+        </div>
+      </div>
+
+      <div class="product-card"
+           data-product-name="Rawcratie"
+           data-product-price="44,99€"
+           data-stripe-url="https://buy.stripe.com/test_5kQ00j9Cc2lPfL5e1PeEo0d">
+        <div class="product-image-slider">
+          <button class="slider-arrow slider-arrow-left" type="button" aria-label="Image précédente">‹</button>
+          <div class="product-image-track">
+            <img src="images/rawcratie-front.jpg" alt="Rawcratie face" class="main-product-image active" />
+            <img src="images/rawcratie-back.jpg" alt="Rawcratie dos" class="main-product-image" />
+          </div>
+          <button class="slider-arrow slider-arrow-right" type="button" aria-label="Image suivante">›</button>
+          <div class="product-badges"><span>Face</span></div>
+          <button class="zoom-button" type="button">Voir +</button>
+        </div>
+        <div class="product-info">
+          <h3>Rawcratie</h3>
+          <p class="price">44,99€</p>
+          <button class="product-button" type="button">Ajouter au panier</button>
+        </div>
+      </div>
+
+      <div class="product-card"
+           data-product-name="Uptempocratie"
+           data-product-price="44,99€"
+           data-stripe-url="https://buy.stripe.com/test_eVqeVd01C5y142ne1PeEo0c">
+        <div class="product-image-slider">
+          <button class="slider-arrow slider-arrow-left" type="button" aria-label="Image précédente">‹</button>
+          <div class="product-image-track">
+            <img src="images/uptempocratie-front.jpg" alt="Uptempocratie face" class="main-product-image active" />
+            <img src="images/uptempocratie-back.jpg" alt="Uptempocratie dos" class="main-product-image" />
+          </div>
+          <button class="slider-arrow slider-arrow-right" type="button" aria-label="Image suivante">›</button>
+          <div class="product-badges"><span>Face</span></div>
+          <button class="zoom-button" type="button">Voir +</button>
+        </div>
+        <div class="product-info">
+          <h3>Uptempocratie</h3>
+          <p class="price">44,99€</p>
+          <button class="product-button" type="button">Ajouter au panier</button>
+        </div>
+      </div>
+
+      <div class="product-card"
+           data-product-name="Zaagocratie"
+           data-product-price="44,99€"
+           data-stripe-url="https://buy.stripe.com/test_9B63cv6q06C52Yj2j7eEo0b">
+        <div class="product-image-slider">
+          <button class="slider-arrow slider-arrow-left" type="button" aria-label="Image précédente">‹</button>
+          <div class="product-image-track">
+            <img src="images/zaagocratie-front.jpg" alt="Zaagocratie face" class="main-product-image active" />
+            <img src="images/zaagocratie-back.jpg" alt="Zaagocratie dos" class="main-product-image" />
+          </div>
+          <button class="slider-arrow slider-arrow-right" type="button" aria-label="Image suivante">›</button>
+          <div class="product-badges"><span>Face</span></div>
+          <button class="zoom-button" type="button">Voir +</button>
+        </div>
+        <div class="product-info">
+          <h3>Zaagocratie</h3>
+          <p class="price">44,99€</p>
+          <button class="product-button" type="button">Ajouter au panier</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" type="button">&times;</button>
+    <img id="lightboxImage" src="" alt="Produit agrandi" />
+  </div>
+
+  <div class="order-modal" id="orderModal">
+    <div class="order-modal-content">
+      <button class="order-close" id="orderClose" type="button">&times;</button>
+
+      <div class="order-header">
+        <p>Commande</p>
+        <h2 id="orderProductName">Nom du produit</h2>
+        <span id="orderProductPrice">44,99€</span>
+      </div>
+
+      <div class="order-product-recap">
+        <div class="order-product-recap-image-wrap">
+          <img id="orderProductImage" src="" alt="Produit sélectionné" />
+        </div>
+        <div class="order-product-recap-info">
+          <p class="recap-label">Produit sélectionné</p>
+          <h3 id="orderRecapName">Nom du produit</h3>
+          <p id="orderRecapPrice">44,99€</p>
+          <span class="recap-note">Tu choisiras la quantité directement sur Stripe</span>
+        </div>
+      </div>
+
+      <form id="orderForm" class="order-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Nom</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Adresse</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="postalCode">Code postal</label>
+            <input type="text" id="postalCode" name="postalCode" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nickname">Surnom pour le maillot</label>
+            <input type="text" id="nickname" name="nickname" maxlength="12" placeholder="12 caractères max" required />
+            <small class="field-note"><span id="nicknameCount">0</span>/12</small>
+          </div>
+          <div class="form-group">
+            <label for="backNumber">Numéro au dos</label>
+            <input type="number" id="backNumber" name="backNumber" min="0" max="99" step="1" placeholder="0 à 99" required />
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="size">Taille du maillot</label>
+            <select id="size" name="size" required>
+              <option value="">Choisir</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="hidden" id="selectedProduct" name="selectedProduct" />
+        <input type="hidden" id="selectedPrice" name="selectedPrice" />
+        <input type="hidden" id="selectedStripeUrl" name="selectedStripeUrl" />
+
+        <button class="submit-order-button" type="submit">
+          Continuer vers le paiement
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
